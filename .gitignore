@@ -1,33 +1,41 @@
-# Windows system files
+# Windows-specific files
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# macOS system files
+# macOS-specific files
 .DS_Store
 
-# PowerShell stuff
+# PowerShell backup and temp files
 *.ps1~
 *.ps1.xml
 *.psm1~
 *.psd1~
 *.bak
-*.log
-
-# Azure-specific
-AzureRmContext.json
-
-# Editor and IDE settings
-.vscode/
-.idea/
-
-# Output or local state
-*.zip
-*.tar.gz
 *.tmp
 *.log
 
-# Don't track secrets
-*.env
+# PowerShell secrets or state
 *.secret
+*.env
 .env.*
+AzureRmContext.json
+
+# Visual Studio Code settings
+.vscode/
+*.code-workspace
+
+# Output artifacts
+*.zip
+*.tar.gz
+*.7z
+*.gz
+
+# Node (if used in mixed repos)
+node_modules/
+npm-debug.log*
+
+# Python (if scripting involved)
+__pycache__/
+*.py[cod]
+*.egg-info/
