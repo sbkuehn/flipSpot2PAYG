@@ -28,12 +28,12 @@
 
 .EXAMPLE
     .\Flip-SpotVM-To-PAYG.ps1 `
-        -ResourceGroupName "sbkWusHub" `
-        -VMName "sbkWusDc01" `
+        -ResourceGroupName "myResourceGroup" `
+        -VMName "myVm01" `
         -Location "westus" `
-        -NICName "sbkWusDc-nic01" `
-        -OSDiskName "sbkWusDc01-osDisk" `
-        -DataDiskName "sbkWusDc01-dataDisk" `
+        -NICName "myVm01-nic" `
+        -OSDiskName "myVm01-osDisk" `
+        -DataDiskName "myVm01-dataDisk" `
         -VMSize "Standard_B2ls_v2"
 
 .NOTES
